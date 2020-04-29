@@ -7,23 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="content">
         <div class="section">
           <div>
-            <h1>Toastmasters Timer's worksheet</h1>
+            <span class="maintitle">Toastmasters Timer's worksheet</span>
+            <hr class="divider" />
             <div class="row">
               <span class="spanned">President's opening</span>
               <span class="minititle">Green</span>
-              <input type="text" value="3 mins" class="inputTime" />
+              <input
+                type="text"
+                value="03:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Yelow</span>
-              <input type="text" value="3.5 mins" class="inputTime" />
+              <input
+                type="text"
+                value="03:30"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Red</span>
-              <input type="text" value="4 mins" class="inputTime" />
+              <input
+                type="text"
+                value="04:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Time </span>
-              <input type="text" class="inputTime" />
+              <input
+                id="time1"
+                type="text"
+                class="inputTime"
+                placeholder="mm:ss"
+                placeholder="mm:ss"
+              />
             </div>
           </div>
           <div>
@@ -32,55 +56,79 @@
                 >Toastmaster intro of roles & speaker 1</span
               >
               <span class="minititle">Green</span>
-              <input type="text" value="3 mins" class="inputTime" />
+              <input
+                type="text"
+                value="03:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Yelow</span>
-              <input type="text" value="4 mins" class="inputTime" />
+              <input
+                type="text"
+                value="04:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Red</span>
-              <input type="text" value="5 mins" class="inputTime" />
+              <input
+                type="text"
+                value="05:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Time </span>
-              <input type="text" class="inputTime" />
+              <input
+                id="time2"
+                type="text"
+                class="inputTime"
+                placeholder="mm:ss"
+                placeholder="mm:ss"
+              />
             </div>
           </div>
         </div>
         <div class="section">
           <div>
-            <div class="row">
+            <div class="rowsubtitle">
               <span class="subtitle">Table Topics</span>
               <span class="minititle">Green</span>
-              <input type="text" value="3 mins" class="inputTime" />
+              <input
+                type="text"
+                value="03:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Yelow</span>
-              <input type="text" value="4 mins" class="inputTime" />
+              <input
+                type="text"
+                value="04:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
               <span class="minititle">Red</span>
-              <input type="text" value="5 mins" class="inputTime" />
+              <input
+                type="text"
+                value="05:00"
+                class="inputTime"
+                placeholder="mm:ss"
+              />
             </div>
           </div>
+          <hr class="divider" />
+
           <div>
             <div class="row">
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -88,27 +136,13 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -116,27 +150,13 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -144,27 +164,13 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -172,27 +178,13 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -200,27 +192,13 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -228,27 +206,13 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
-              </div>
-              <div class="row">
-                <span class="minititle">Name</span>
-                <input type="text" class="inputName" />
-                <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
             <div class="row">
@@ -256,13 +220,111 @@
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
               <div class="row">
                 <span class="minititle">Name</span>
                 <input type="text" class="inputName" />
                 <span class="minititle">Time </span>
-                <input type="text" class="inputTime" />
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Name</span>
+                <input type="text" class="inputName" />
+                <span class="minititle">Time </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
               </div>
             </div>
           </div>
@@ -271,65 +333,167 @@
           <div class="rowsubtitle">
             <span class="subtitle">Speeches</span>
           </div>
+          <hr class="divider" />
+
           <div class="row">
             <span class="minititle">Speaker 1</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Speaker 2</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Speaker 3</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Speaker 4</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Speaker 5</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
         </div>
 
@@ -337,95 +501,262 @@
           <div class="rowsubtitle">
             <span class="subtitle">Evaluators</span>
           </div>
+
+          <hr class="divider" />
+
           <div class="row">
             <span class="minititle">Evaluator 1</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Evaluator 2</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Evaluator 3</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Evaluator 4</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Evaluator 5</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">General evaluator</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
           <div class="row">
             <span class="minititle">Grammarian evaluator</span>
             <input type="text" class="inputName" />
             <span class="minititle">Green</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Yelow</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Red</span>
-            <input type="text" value=" " class="inputTime" />
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+            />
             <span class="minititle">Time </span>
-            <input type="text" class="inputTime" />
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+            />
           </div>
         </div>
       </div>
       <div class="wrapper" id="stopwatch">
-        <h1>Stopwatch</h1>
-        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <div class="rowsubtitle">
+          <span class="watchspan">Times for semaphore</span>
+        </div>
+        <div class="row">
+          <span class="minititle">Green</span>
+          <input type="text" value=" " class="inputTime" placeholder="mm:ss" />
+          <span class="minititle">Yelow</span>
+          <input type="text" value=" " class="inputTime" placeholder="mm:ss" />
+          <span class="minititle">Red</span>
+          <input
+            type="text"
+            class="inputTime"
+            placeholder="mm:ss"
+            placeholder="mm:ss"
+          />
+        </div>
+        <div class="rowsubtitle">
+          <span class="watchspan">Stopwatch</span>
+          <div class="semaphoreGreen"></div>
+        </div>
+        <p>
+          <span id="minutes">00</span>:<span id="seconds">00</span>:<span
+            id="tens"
+            >00</span
+          >
+        </p>
         <button id="button-start">Start</button>
         <button id="button-stop">Stop</button>
         <button id="button-reset">Reset</button>

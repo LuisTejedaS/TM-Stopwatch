@@ -1,8 +1,10 @@
 window.onload = function () {
   var seconds = 00;
+  var minutes = 00;
   var tens = 00;
   var appendTens = document.getElementById("tens");
   var appendSeconds = document.getElementById("seconds");
+  var appendMinutes = document.getElementById("minutes");
   var buttonStart = document.getElementById("button-start");
   var buttonStop = document.getElementById("button-stop");
   var buttonReset = document.getElementById("button-reset");
@@ -44,18 +46,29 @@ window.onload = function () {
       appendTens.innerHTML = "0" + 0;
     }
 
+    if (seconds > 59) {
+      console.log("minutes");
+      minutes++;
+      appendMinutes.innerHTML = "0" + minutes;
+      tens = 0;
+      seconds = 0;
+      appendTens.innerHTML = "0" + 0;
+      appendSeconds.innerHTML = "0" + 0;
+    }
+
     if (seconds > 9) {
       appendSeconds.innerHTML = seconds;
     }
+    if (minutes > 9) {
+      appendMinutes.innerHTML = minutes;
+    }
   }
-};
 
-window.onscroll = function () {
-  var header = document.getElementById("stopwatch");
-  var sticky = header.offsetTop;
-  if (window.pageYOffset > sticky) {
-    header.classList.add("wrapper2");
-  } else {
-    header.classList.remove("wrapper2");
-  }
+  $(".inputTime").mask("00:00");
+
+  $("#time1").blur(function () {
+    var value1 = $("#time1").val();
+    var value2 = $("#time2").val();
+    alert(value1 + value2);
+  });
 };
