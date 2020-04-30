@@ -13,55 +13,54 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="section">
-          <div>
-            <span class="maintitle">Toastmasters Timer's worksheet</span>
+        <div class="bisection">
+          <div class="section">
+            <div class="rowsubtitle">
+              <span class="subtitle">Toastmaster</span>
+            </div>
             <hr class="divider" />
             <div class="row">
-              <span class="spanned">Oficial de asamblea (2")</span>
               <span class="minititle">Tiempo 1</span>
               <input type="text" class="inputTime" placeholder="mm:ss" />
               <span class="minititle">Tiempo 2</span>
               <input type="text" class="inputTime" placeholder="mm:ss" />
-              <span class="minititle">Acumulado </span>
+              <span class="minititle">Tiempo 3</span>
+              <input type="text" class="inputTime" placeholder="mm:ss" />
+              <span class="minititle"> Tiempo 4 </span>
               <input type="text" class="inputTime" placeholder="mm:ss" />
             </div>
             <div class="row">
-              <span class="spanned">Presidente (2-3")</span>
-              <span class="minititle">Tiempo 1</span>
+              <span class="minititle">Tiempo 5</span>
               <input type="text" class="inputTime" placeholder="mm:ss" />
-              <span class="minititle">Tiempo 2</span>
+              <span class="minititle">Tiempo 6</span>
               <input type="text" class="inputTime" placeholder="mm:ss" />
-              <span class="minititle">Acumulado </span>
+              <span class="minititle">Tiempo 7</span>
+              <input type="text" class="inputTime" placeholder="mm:ss" />
+              <span class="minititle">Tiempo T</span>
               <input type="text" class="inputTime" placeholder="mm:ss" />
             </div>
           </div>
-        </div>
-        <div class="section">
-          <div class="rowsubtitle">
-            <span class="subtitle">Toastmaster</span>
-          </div>
-          <hr class="divider" />
-          <div class="row">
-            <span class="spanned">Toastmaster (8-10")</span>
-            <span class="minititle">Tiempo 1</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-            <span class="minititle">Tiempo 2</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-            <span class="minititle">Tiempo 3</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-            <span class="minititle"> Tiempo 4 </span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-          </div>
-          <div class="row">
-            <span class="minititle">Tiempo 5</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-            <span class="minititle">Tiempo 6</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-            <span class="minititle">Tiempo 7</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
-            <span class="minititle">Tiempo T</span>
-            <input type="text" class="inputTime" placeholder="mm:ss" />
+          <div class="section">
+            <div>
+              <span class="maintitle">Oficial de asamblea y Presidente</span>
+              <hr class="divider" />
+              <div class="row">
+                <span class="minititle">Tiempo 1</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+                <span class="minititle">Tiempo 2</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+                <span class="minititle">Acumulado </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Tiempo 1</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+                <span class="minititle">Tiempo 2</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+                <span class="minititle">Acumulado </span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="section">
@@ -717,20 +716,33 @@
         </div>
         <div class="row">
           <span class="minititle">Green</span>
-          <input type="text" value=" " class="inputTime" placeholder="mm:ss" />
+          <input
+            type="text"
+            value=" "
+            class="inputTime"
+            id="greenTime"
+            placeholder="mm:ss"
+          />
           <span class="minititle">Yelow</span>
-          <input type="text" value=" " class="inputTime" placeholder="mm:ss" />
+          <input
+            type="text"
+            value=" "
+            class="inputTime"
+            placeholder="mm:ss"
+            id="yellowTime"
+          />
           <span class="minititle">Red</span>
           <input
             type="text"
             class="inputTime"
             placeholder="mm:ss"
             placeholder="mm:ss"
+            id="redTime"
           />
         </div>
         <div class="rowsubtitle">
           <span class="watchspan">Stopwatch</span>
-          <div class="semaphoreGreen"></div>
+          <div id="semaphore" class="semaphoreNormal"></div>
         </div>
         <p>
           <span id="minutes">00</span>:<span id="seconds">00</span>:<span

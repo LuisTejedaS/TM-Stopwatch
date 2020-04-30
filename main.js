@@ -2,6 +2,9 @@ window.onload = function () {
   var seconds = 00;
   var minutes = 00;
   var tens = 00;
+  var secondsForGreen = 0;
+  var secondsForYellow = 0;
+  var secondsForRed = 0;
   var appendTens = document.getElementById("tens");
   var appendSeconds = document.getElementById("seconds");
   var appendMinutes = document.getElementById("minutes");
@@ -11,6 +14,23 @@ window.onload = function () {
   var Interval;
 
   buttonStart.onclick = function () {
+    var value1 = $("#greenTime").val();
+    var data = value1.split(":");
+    secondsForGreen = data[0] * 60 + data[1] * 1;
+    var value2 = $("#yellowTime").val();
+    var data2 = value2.split(":");
+    secondsForYellow = data2[0] * 60 + data2[1] * 1;
+    var value3 = $("#redTime").val();
+    var data3 = value3.split(":");
+    secondsForRed = data3[0] * 60 + data3[1] * 1;
+    if (secondsForGreen > secondsForRed || secondsForGreen > secondsForYellow) {
+      alert("error en tiempos de cronometro");
+      return;
+    }
+    if (secondsForYellow > secondsForRed) {
+      alert("error en tiempos de cronometro");
+      return;
+    }
     clearInterval(Interval);
     Interval = setInterval(startTimer, 10);
   };
@@ -25,6 +45,10 @@ window.onload = function () {
     seconds = "00";
     appendTens.innerHTML = tens;
     appendSeconds.innerHTML = seconds;
+    $("#semaphore").removeClass("semaphoreYellow");
+    $("#semaphore").removeClass("semaphoreRed");
+    $("#semaphore").removeClass("semaphoreGreen");
+    $("#semaphore").addClass("semaphoreNormal");
   };
 
   function startTimer() {
@@ -62,9 +86,21 @@ window.onload = function () {
     if (minutes > 9) {
       appendMinutes.innerHTML = minutes;
     }
+
+    if (seconds >= secondsForRed) {
+      $("#semaphore").removeClass("semaphoreYellow");
+      $("#semaphore").addClass("semaphoreRed");
+    } else if (seconds >= secondsForYellow) {
+      $("#semaphore").removeClass("semaphoreGreen");
+      $("#semaphore").addClass("semaphoreYellow");
+    } else if (seconds >= secondsForGreen) {
+      $("#semaphore").removeClass("semaphoreNormal");
+      $("#semaphore").addClass("semaphoreGreen");
+    }
   }
 
   $(".inputTime").mask("00:00");
+  $(".inputTimeTopic").mask("00:00");
 
   $("#time1").blur(function () {
     var value1 = $("#time1").val();
