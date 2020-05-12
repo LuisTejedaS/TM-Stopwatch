@@ -13,6 +13,13 @@
   <body>
     <div class="container">
       <div class="content">
+        <div class="section">
+          <div>
+            <div class="rowsubtitle">
+              <span class="maintitle">Hoja de tiempo Toastmasters</span>
+            </div>
+          </div>
+        </div>
         <div class="bisection">
           <div class="section">
             <div class="rowsubtitle">
@@ -42,7 +49,7 @@
           </div>
           <div class="section">
             <div>
-              <span class="maintitle">Oficial de asamblea y Presidente</span>
+              <span class="subtitle">Oficial de asamblea y Presidente</span>
               <hr class="divider" />
               <div class="row">
                 <span class="minititle">Tiempo 1</span>
@@ -67,21 +74,23 @@
           <div>
             <div class="rowsubtitle">
               <span class="subtitle">Table Topics</span>
-              <span class="minititle">Green</span>
+              <span class="minititlegreen" style="margin-left: 30px;"
+                >Verde</span
+              >
               <input
                 type="text"
                 value="01:00"
                 class="inputTime"
                 placeholder="mm:ss"
               />
-              <span class="minititle">Yelow</span>
+              <span class="minititle">Amarillo</span>
               <input
                 type="text"
                 value="01:30"
                 class="inputTime"
                 placeholder="mm:ss"
               />
-              <span class="minititle">Red</span>
+              <span class="minititle">Rojo</span>
               <input
                 type="text"
                 value="02:00"
@@ -93,144 +102,264 @@
           <hr class="divider" />
           <div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname1" />
+                  <label class="form-input-label" id="nameinputlabel"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname2" />
+                  <label class="form-input-label" id="nameinputlabel2"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname3" />
+                  <label class="form-input-label" id="nameinputlabel3"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname4" />
+                  <label class="form-input-label" id="nameinputlabel4"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname5" />
+                  <label class="form-input-label" id="nameinputlabel5"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname6" />
+                  <label class="form-input-label" id="nameinputlabel6"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname7" />
+                  <label class="form-input-label" id="nameinputlabel7"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname8" />
+                  <label class="form-input-label" id="nameinputlabel8"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname9" />
+                  <label class="form-input-label" id="nameinputlabel9"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname10" />
+                  <label class="form-input-label" id="nameinputlabel10"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname11" />
+                  <label class="form-input-label" id="nameinputlabel11"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname12" />
+                  <label class="form-input-label" id="nameinputlabel12"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname13" />
+                  <label class="form-input-label" id="nameinputlabel13"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname14" />
+                  <label class="form-input-label" id="nameinputlabel14"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname15" />
+                  <label class="form-input-label" id="nameinputlabel15"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname16" />
+                  <label class="form-input-label" id="nameinputlabel16"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname17" />
+                  <label class="form-input-label" id="nameinputlabel17"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname18" />
+                  <label class="form-input-label" id="nameinputlabel18"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Tiempo dir. </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
-              <span class="minititle">Name</span>
-              <input type="text" class="inputName" />
-              <span class="minititle">Tiempo </span>
-              <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname19" />
+                  <label class="form-input-label" id="nameinputlabel19"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
+              <div class="columngroup">
+                <span class="minititle">Tiempo director </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+                <div class="group">
+                  <input type="text" class="form-input" id="topicname20" />
+                  <label class="form-input-label" id="nameinputlabel20"
+                    >Nombre</label
+                  >
+                </div>
+                <span class="minititle">Tiempo </span>
+                <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+              </div>
             </div>
             <div class="row">
               <span class="minititle">Tiempo Director de topicos</span>
@@ -242,517 +371,345 @@
         </div>
         <div class="section">
           <div class="rowsubtitle">
-            <span class="subtitle">Speeches</span>
+            <span class="subtitle">Discursos</span>
           </div>
           <hr class="divider" />
-
-          <div class="row">
-            <span class="minititle">Speaker 1</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Orador 1</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluador 1</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 1</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Speaker 2</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Orador 2</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluador 2</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 2</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Speaker 3</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Orador 3</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluador 3</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 3</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Speaker 4</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Orador 4</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluador 4</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 4</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
           <div class="row">
             <span class="minititle">Tiempo Acumulado</span>
-            <input type="text" class="inputTimeTopic" placeholder="mm:ss" />
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
         </div>
 
         <div class="section">
           <div class="rowsubtitle">
-            <span class="subtitle">Evaluators</span>
+            <span class="subtitle">Evaluaciones</span>
           </div>
 
           <hr class="divider" />
-
-          <div class="row">
-            <span class="minititle">Evaluator 1</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 1</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluator 2</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 2</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluator 3</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 3</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Evaluator 4</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador 4</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-
-          <div class="row">
-            <span class="minititle">General evaluator</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador General</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
-          <div class="row">
-            <span class="minititle">Grammarian evaluator</span>
-            <input type="text" class="inputName" />
-            <span class="minititle">Green</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Yelow</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Red</span>
-            <input
-              type="text"
-              value=" "
-              class="inputTime"
-              placeholder="mm:ss"
-            />
-            <span class="minititle">Time </span>
-            <input
-              type="text"
-              class="inputTime"
-              placeholder="mm:ss"
-              placeholder="mm:ss"
-            />
+          <div class="rowspeech">
+            <div class="group">
+              <input type="text" class="form-input" id="topicname1" />
+              <label class="form-input-label" id="nameinputlabel"
+                >Evaluador gramatical</label
+              >
+            </div>
+            <span class="minititle">Tiempo verde</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo amarillo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo rojo</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
+            <span class="minititle">Tiempo total</span>
+            <input type="text" class="inputTime" placeholder="mm:ss" />
           </div>
         </div>
       </div>
       <div class="wrapper" id="stopwatch">
-        <div class="rowsubtitle">
-          <span class="watchspan">Times for semaphore</span>
+        <div class="section">
+          <div class="rowsubtitle">
+            <span class="subtitle">Tiempo para semáforo</span>
+          </div>
+          <hr class="divider" />
+          <div class="row">
+            <span class="minititle">Verde</span>
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              id="greenTime"
+              placeholder="mm:ss"
+            />
+            <span class="minititle">Amarillo</span>
+            <input
+              type="text"
+              value=" "
+              class="inputTime"
+              placeholder="mm:ss"
+              id="yellowTime"
+            />
+            <span class="minititle">Rojo</span>
+            <input
+              type="text"
+              class="inputTime"
+              placeholder="mm:ss"
+              placeholder="mm:ss"
+              id="redTime"
+            />
+          </div>
         </div>
-        <div class="row">
-          <span class="minititle">Green</span>
-          <input
-            type="text"
-            value=" "
-            class="inputTime"
-            id="greenTime"
-            placeholder="mm:ss"
-          />
-          <span class="minititle">Yelow</span>
-          <input
-            type="text"
-            value=" "
-            class="inputTime"
-            placeholder="mm:ss"
-            id="yellowTime"
-          />
-          <span class="minititle">Red</span>
-          <input
-            type="text"
-            class="inputTime"
-            placeholder="mm:ss"
-            placeholder="mm:ss"
-            id="redTime"
-          />
+        <div class="section">
+          <div class="rowsubtitle">
+            <span class="watchspan">Cronómetro</span>
+            <div id="semaphore" class="semaphoreNormal"></div>
+          </div>
+          <p>
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span
+              id="tens"
+              >00</span
+            >
+          </p>
+          <button id="button-start">Start</button>
+          <button id="button-stop">Stop</button>
+          <button id="button-reset">Reset</button>
         </div>
-        <div class="rowsubtitle">
-          <span class="watchspan">Stopwatch</span>
-          <div id="semaphore" class="semaphoreNormal"></div>
+        <div class="section">
+          <div class="rowsubtitle">
+            <span class="watchspan">Totales</span>
+          </div>
+          <div class="columnContainer">
+            <div class="column">
+              <div class="row">
+                <span class="minititle">Oficial de asamblea</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Presidente</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Toastmaster</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Director de temas</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <span class="minititle">Topicos de mesa</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Proyectos</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Receso</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Educativas</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+              <div class="row">
+                <span class="minititle">Evaluacion</span>
+                <input type="text" class="inputTime" placeholder="mm:ss" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <button id="button-calcular">Calcular</button>
+          </div>
         </div>
-        <p>
-          <span id="minutes">00</span>:<span id="seconds">00</span>:<span
-            id="tens"
-            >00</span
-          >
-        </p>
-        <button id="button-start">Start</button>
-        <button id="button-stop">Stop</button>
-        <button id="button-reset">Reset</button>
       </div>
     </div>
   </body>

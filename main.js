@@ -99,6 +99,20 @@ window.onload = function () {
     }
   }
 
+  function labelShrink(el) {
+    if (el.target.value) {
+      $("#" + el.target.nextElementSibling.id).removeClass("form-input-label");
+      $("#" + el.target.nextElementSibling.id).addClass(
+        "form-input-label shrink"
+      );
+    } else {
+      $("#" + el.target.nextElementSibling.id).removeClass(
+        "form-input-label shrink"
+      );
+      $("#" + el.target.nextElementSibling.id).addClass("form-input-label");
+    }
+  }
+
   $(".inputTime").mask("00:00");
   $(".inputTimeTopic").mask("00:00");
 
@@ -106,5 +120,66 @@ window.onload = function () {
     var value1 = $("#time1").val();
     var value2 = $("#time2").val();
     alert(value1 + value2);
+  });
+
+  $("#topicname1").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname2").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname3").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname4").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname5").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname6").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname7").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname8").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname9").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname10").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname11").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname12").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname13").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname14").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname15").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname16").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname17").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname18").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname19").blur(function (el) {
+    labelShrink(el);
+  });
+  $("#topicname20").blur(function (el) {
+    labelShrink(el);
   });
 };
